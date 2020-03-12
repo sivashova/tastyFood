@@ -1,0 +1,29 @@
+{
+  "name": "tasty-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "react.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivashova/tastyFood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sivashova/tastyFood/issues"
+  },
+  "homepage": "https://github.com/sivashova/tastyFood#readme"
+}
