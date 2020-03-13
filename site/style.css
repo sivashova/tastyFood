@@ -1,0 +1,75 @@
+@import 'reset.css';
+
+html, body  {
+    width: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: Arial, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #363636;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px 0;
+    margin-bottom: 50px;
+}
+
+.headerTitle {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.headerSubTitle {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
+}
+
+.menu {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.menuItem {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 3px;
+}
+
+.menuDivider {
+    display: inline-block;
+    vertical-align: baseline;
+
+    font-size: 17px;
+    line-height: normal;
+}
+
+.menuLink {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.menuLink:hover {
+    text-decoration: none;
+    color: #2dd6c1;
+}
