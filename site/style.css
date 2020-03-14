@@ -14,6 +14,15 @@ body {
     text-align: left;
 }
 
+a {
+    color: #363636;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2dd6c1;
+}
+
 .layout {
     display: flex;
     flex-direction: column;
@@ -72,4 +81,59 @@ body {
 .menuLink:hover {
     text-decoration: none;
     color: #2dd6c1;
+}
+
+.mainBg {
+    display: block;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50%, 100%;
+    background-size: cover, cover;
+    background-image: url('./images/main-bg.jpg'), none;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 300px;
+}
+
+.recepieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    margin-top: -100px;
+}
+
+.recepieItem {
+    display: flex;
+    flex: 1;
+    padding: 30px;
+    color: #363636;
+}
+
+.recepieImage {
+    display: block;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.recepieTitle {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.recepieInfo {
+    flex: 1;
+}
+
+.ingredientItem {
+    font-size: 14px;
+    color: #727272;
+}
+
+.ingredientItem + .ingredientItem {
+    margin-top: 10px;
+}
+
+.ingredientQuantity {
+    margin-left: 5px;
 }
