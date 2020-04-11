@@ -1,0 +1,258 @@
+@import 'reset.css';
+
+html, body  {
+    width: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: Arial, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #363636;
+    line-height: 1.6;
+    text-align: left;
+}
+
+a {
+    color: #363636;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2dd6c1;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px 0;
+    margin-bottom: 50px;
+}
+
+.headerTitle {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.headerSubTitle {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
+}
+
+.menu {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.menuItem {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 3px;
+}
+
+.menuDivider {
+    display: inline-block;
+    vertical-align: baseline;
+
+    font-size: 17px;
+    line-height: normal;
+}
+
+.menuLink {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.menuLink:hover {
+    text-decoration: none;
+    color: #2dd6c1;
+}
+
+.mainBg {
+    display: block;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50%, 100%;
+    background-size: cover, cover;
+    background-image: url('./images/main-bg.jpg'), none;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 300px;
+}
+
+.recepieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    margin-top: -100px;
+}
+
+.recepieItem {
+    flex-grow: 1;
+    width: 50%;
+    padding: 30px;
+    color: #363636;
+    box-sizing: border-box;
+}
+.recepieItemFake {
+    flex-grow: 1;
+    width: 50%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.recepieImage {
+    display: block;
+    width: 100%;
+}
+
+.recepieTitle {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.recepieInfo {
+    flex: 1;
+}
+
+.recepieItemHolder {
+    display: flex;
+    height: 100%;
+}
+
+.recepieImageHolder {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.ingredientItem {
+    font-size: 14px;
+    color: #727272;
+}
+
+.ingredientItem + .ingredientItem {
+    margin-top: 10px;
+}
+
+.ingredientQuantity {
+    margin-left: 5px;
+}
+
+.recepieButton {
+    text-align: center;
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #2dd6c1;
+    border-radius: 2px;
+    outline: 0 none;
+    background-color: #fff;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    font-size: 0;
+    color: #2dd6c1;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.button:hover {
+    color: #363636;
+    border-color: #363636;
+    text-decoration: none;
+}
+
+.button:active {
+    background-color: #F3F5F6;
+}
+
+/* убираем внутренний отступ у кнопки в FF, который зарезервирован для рамки при фокусе */
+
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.buttonText {
+    font-size: 13px;
+}
+
+
+/*.buttonThemeBlue {*/
+/*    background-color: #06b8e8;*/
+/*    border-color: #06B8E8;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.buttonThemeBlue:hover {*/
+/*    background-color: #17C9F8;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.buttonThemeBlue:active {*/
+/*    background-color: #06B1DF;*/
+/*}*/
+
+
+/*.buttonTypeContour {*/
+/*    background: transparent;*/
+/*}*/
+
+/*.buttonTypeContour.buttonThemeBlue {*/
+/*    color: #06B8E8;*/
+/*}*/
+
+/*.buttonTypeContour.buttonThemeBlue:hover {*/
+/*    color: #fff;*/
+/*}*/
+
+/*.buttonStateDisabled {*/
+/*    color: rgba(72,72,72,0.3);*/
+/*    border-color: rgba(208, 212, 220, 0.74);*/
+/*    cursor: default;*/
+/*}*/
+
+/*.buttonStateDisabled:hover,*/
+/*.buttonStateDisabled:active {*/
+/*    box-shadow: none;*/
+/*    color: rgba(72,72,72,0.3);*/
+/*    background: #fff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.buttonStateDisabled.buttonThemeBlue {*/
+/*    background: #f3f5f6;*/
+/*    border-color: #f3f5f6;*/
+/*    color: rgba(72,72,72,0.3);*/
+/*}*/
+
+/*.buttonStateDisabled.buttonThemeBlue:hover,*/
+/*.buttonStateDisabled.buttonThemeBlue:active {*/
+/*    background: #f3f5f6;*/
+/*    color: rgba(72,72,72,0.3);*/
+/*}*/

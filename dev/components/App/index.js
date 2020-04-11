@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '../Header';
 import Layout from '../Layout';
 import Page from '../Page';
-import RecepieList from "../RecepieList";
+import RecepieList from '../RecepieList';
 
 import { RECIPES } from '../utils/recipes';
 
