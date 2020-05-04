@@ -103,6 +103,15 @@ a:hover {
 
 .recepieItem {
     display: flex;
+    width: 50%;
+    padding: 30px;
+    color: #363636;
+    box-sizing: border-box;
+}
+
+.recepieItemFake {
+    width: 50%;
+    display: flex;
     flex: 1;
     padding: 30px;
     color: #363636;
@@ -110,7 +119,7 @@ a:hover {
 
 .recepieImage {
     display: block;
-    width: 50%;
+    width: 100%;
     margin-right: 20px;
 }
 
@@ -125,6 +134,20 @@ a:hover {
     flex: 1;
 }
 
+.recepieItemHolder {
+    display: flex;
+    height: 100%;
+}
+
+.recepieImageHolder {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.recepieButton {
+    text-align: center;
+}
+
 .ingredientItem {
     font-size: 14px;
     color: #727272;
@@ -137,3 +160,25 @@ a:hover {
 .ingredientQuantity {
     margin-left: 5px;
 }
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: #2dd6c1;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.button:hover {
+    background: #2cbda8
+}
+
+
