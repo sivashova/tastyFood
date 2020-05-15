@@ -1,0 +1,9 @@
+.root {
+    display: block;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50%, 100%;
+    background-size: cover, cover;
+    background-image: url('./images/main-bg.jpg'), none;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 300px;
+}

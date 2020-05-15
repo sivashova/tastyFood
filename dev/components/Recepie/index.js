@@ -1,34 +1,54 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const Recepie = ({ item }) => (
-    <li className='recepieItem'>
-        <div className='recepieItemHolder'>
-            <div className='recepieImageHolder'>
-                <img className='recepieImage' src={item.src} alt=""/>
-            </div>
+import { Icon } from '../UI/Icon';
 
-            <div className='recepieInfo'>
-                <a className='recepieTitle' href='#'>
-                    {item.name}
-                </a>
-                <ul>
-                    {item.ingredients.map((item, i) => (
-                        <li className='ingredientItem' key={i}>
-                            <b>{item.name}:</b>
-                            <span className='ingredientQuantity'>
-                                {item.quantity}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
+// icons
+import EditIcon from '../../static/icons/edit.svg'
+import DeleteIcon from '../../static/icons/delete.svg'
+
+// styles
+import css from './Recepie.css';
+
+const Recepie = ({ item, isFake }) => {
+    if (isFake) {
+        return (
+            <li className={css.rootFake} />
+        )
+    }
+    return (
+        <li className={css.root}>
+            <div className={css.holder}>
+                <div className={css.imageHolder}>
+                    <img className={css.image} src={item.src} alt=""/>
+                </div>
+                <div className={css.info}>
+                    <div>
+                        <a className={css.title} href='#'>
+                            {item.name}
+                            <Icon glyph={EditIcon} className={css.icon}/>
+                            <Icon glyph={DeleteIcon} className={css.icon}/>
+                        </a>
+                    </div>
+                    <ul>
+                        {item.ingredients.map((item, i) => (
+                            <li className={css.ingredient} key={i}>
+                                <b>{item.name}:</b>
+                                <span className={css.quantity}>
+                                    {item.quantity}
+                                </span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
-        </div>
-    </li>
-);
+        </li>
+    )
+};
 
 Recepie.propTypes = {
     item: PropTypes.object,
+    isFake: PropTypes.bool,
 };
 
 export default Recepie;

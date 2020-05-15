@@ -1,7 +1,12 @@
+import FilaSrc from '../images/fila.jpg';
+import AvoSaladSrc from '../images/avo-salad.jpg';
+import BorschSrc from '../images/borsch.jpg';
+import JulienSrc from '../images/julien.jpg';
+
 export const RECIPES = [
     {
         name: 'Борщ',
-        src: './images/borsch.jpg',
+        src: BorschSrc,
         ingredients: [
             {
                 name: 'лук',
@@ -15,7 +20,7 @@ export const RECIPES = [
     },
     {
         name: 'Филадельфия с лососем',
-        src: './images/fila.jpg',
+        src: FilaSrc,
         ingredients: [
             {
                 name: 'Рис для суши',
@@ -37,7 +42,7 @@ export const RECIPES = [
     },
     {
         name: 'Салат из авокадо',
-        src: './images/avo-salad.jpg',
+        src: AvoSaladSrc,
         ingredients: [
             {
                 name: 'авокадо',
@@ -55,7 +60,7 @@ export const RECIPES = [
     },
     {
         name: 'Жульен с курицей и грибами',
-        src: './images/julien.jpg',
+        src: JulienSrc,
         ingredients: [
             {
                 name: 'Курица (филе)',

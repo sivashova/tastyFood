@@ -1,0 +1,28 @@
+.root {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 3px;
+}
+
+.divider {
+    display: inline-block;
+    vertical-align: baseline;
+
+    font-size: 17px;
+    line-height: normal;
+}
+
+.link {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-decoration: none;
+}
