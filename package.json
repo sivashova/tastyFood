@@ -2,26 +2,32 @@
   "name": "tasty-food",
   "version": "1.0.0",
   "description": "",
-  "main": "react.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "webpack.config.js",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "@babel/preset-react": "^7.8.3",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
-  "dependencies": {},
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "prod": "NODE_ENV=production webpack-cli"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sivashova/tastyFood.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/sivashova/tastyFood/issues"
   },
